@@ -1,2 +1,3 @@
 embedchain[youtube]
 streamlit
+pysqlite3-binary
