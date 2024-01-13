@@ -1,2 +1,2 @@
-embedchain["youtube"]
+embedchain[youtube]
 streamlit
