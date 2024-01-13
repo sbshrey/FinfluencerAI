@@ -52,7 +52,7 @@ add_data_to_app()
 # app.add("@pranjalkamra", data_type="youtube_channel")
 
 
-assistant_avatar_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sadhguru-Jaggi-Vasudev.jpg/640px-Sadhguru-Jaggi-Vasudev.jpg"  # noqa: E501
+# assistant_avatar_url = "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Sadhguru-Jaggi-Vasudev.jpg/640px-Sadhguru-Jaggi-Vasudev.jpg"  # noqa: E501
 
 
 st.title("🤑 Finfluencer AI")
@@ -73,7 +73,7 @@ if "messages" not in st.session_state:
 
 for message in st.session_state.messages:
     role = message["role"]
-    with st.chat_message(role, avatar=assistant_avatar_url if role == "assistant" else None):
+    with st.chat_message(role, avatar='🤖' if role == "assistant" else '🧑‍💻'):
         st.markdown(message["content"])
 
 if prompt := st.chat_input("Ask me anything!"):
@@ -81,7 +81,7 @@ if prompt := st.chat_input("Ask me anything!"):
         st.markdown(prompt)
         st.session_state.messages.append({"role": "user", "content": prompt})
 
-    with st.chat_message("assistant", avatar=assistant_avatar_url):
+    with st.chat_message("assistant", avatar='🤖'):
         msg_placeholder = st.empty()
         msg_placeholder.markdown("Thinking...")
         full_response = ""

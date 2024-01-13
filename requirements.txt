@@ -99,7 +99,7 @@ pypdf==3.17.4
 PyPika==0.48.9
 pyproject_hooks==1.0.0
 pysbd==0.3.4
-pysqlite3-binary
+pysqlite3-binary==0.5.2
 python-dateutil==2.8.2
 python-dotenv==1.0.0
 pytube==15.0.0
