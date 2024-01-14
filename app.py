@@ -30,6 +30,9 @@ def add_data_to_app():
     app.add("@AkshatZayn", data_type="youtube_channel")
     app.add("@warikoo", data_type="youtube_channel")
     app.add("@CARachanaRanade", data_type="youtube_channel")
+    app.add("@varsitybyzerodha", data_type="youtube_channel")
+    app.add("@financewithsharan", data_type="youtube_channel")
+    app.add("@nehanagar", data_type="youtube_channel")
     
     # url = "https://gist.githubusercontent.com/deshraj/50b0597157e04829bbbb7bc418be6ccb/raw/95b0f1547028c39691f5c7db04d362baa597f3f4/data.csv"  # noqa:E501
     # response = requests.get(url)
