@@ -1,4 +1,5 @@
-import os
+import random
+import time
 import queue
 import threading
 
@@ -26,18 +27,27 @@ def finfluencers_ai():
 @st.cache_resource
 def add_data_to_app():
     app = finfluencers_ai()
-    # with open("personal_finance.txt", "r") as f:
-    #     for row in f.readlines():
-    #         print(row)
-    #         app.add(row, data_type="youtube_video")
+    with open("personal_finance.txt", "r") as f:
+        for row in f.readlines():
+            print(row)
+            app.add(row, data_type="youtube_video")
+            time.sleep(random.randint(60, 100))
 
-    app.add("@CARachanaRanade", data_type="youtube_channel")
-    app.add("@varsitybyzerodha", data_type="youtube_channel")
-    app.add("@financewithsharan", data_type="youtube_channel")
-    app.add("@AkshatZayn", data_type="youtube_channel")
-    app.add("@warikoo", data_type="youtube_channel")
-    app.add("@pranjalkamra", data_type="youtube_channel")
-    app.add("@nehanagar", data_type="youtube_channel")
+
+    # app.add("@CARachanaRanade", data_type="youtube_channel")
+    # time.sleep(100)
+    # app.add("@varsitybyzerodha", data_type="youtube_channel")
+    # time.sleep(100)
+    # app.add("@financewithsharan", data_type="youtube_channel")
+    # time.sleep(100)
+    # app.add("@AkshatZayn", data_type="youtube_channel")
+    # time.sleep(100)
+    # app.add("@warikoo", data_type="youtube_channel")
+    # time.sleep(100)
+    # app.add("@pranjalkamra", data_type="youtube_channel")
+    # time.sleep(100)
+    # app.add("@nehanagar", data_type="youtube_channel")
+    # time.sleep(100)
     
     # url = "https://gist.githubusercontent.com/deshraj/50b0597157e04829bbbb7bc418be6ccb/raw/95b0f1547028c39691f5c7db04d362baa597f3f4/data.csv"  # noqa:E501
     # response = requests.get(url)
