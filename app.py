@@ -30,7 +30,10 @@ def add_data_to_app():
     with open("personal_finance.txt", "r") as f:
         for row in f.readlines():
             print(row)
-            app.add(row, data_type="youtube_video")
+            try:
+                app.add(row, data_type="youtube_video")
+            except Exception as e:
+                continue
             time.sleep(random.randint(60, 100))
 
 
